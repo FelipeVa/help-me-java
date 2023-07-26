@@ -21,5 +21,5 @@ But also, you can open the project from NetBeans IDE, and run the `Main` class.
 ## Authors
 Felipe Valencia - 202262578
 
-Jairo Panesso - 2262462
+Jairo Panesso - 202262462
 
