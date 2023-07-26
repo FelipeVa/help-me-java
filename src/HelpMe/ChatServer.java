@@ -25,7 +25,7 @@ public class ChatServer {
         new ChatServer().start();
     }
 
-    private void start() {
+    public void start() {
         clientOutputStreams = new ArrayList<>();
 
         try {

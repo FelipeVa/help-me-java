@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,6 +49,7 @@ public class Administrator extends javax.swing.JFrame {
         ClientOneSendButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Administrator");
         getContentPane().setLayout(null);
 
         ClientTwoMessage.setColumns(20);
@@ -64,15 +64,9 @@ public class Administrator extends javax.swing.JFrame {
         ClientTwoSendButton.setBounds(760, 220, 80, 60);
 
         ClientTwoMessagesList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = {};
-
-            public int getSize() {
-                return strings.length;
-            }
-
-            public String getElementAt(int i) {
-                return strings[i];
-            }
+            String[] strings = { };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
         });
         jScrollPane2.setViewportView(ClientTwoMessagesList);
 
@@ -80,15 +74,9 @@ public class Administrator extends javax.swing.JFrame {
         jScrollPane2.setBounds(460, 20, 380, 190);
 
         ClientOneMessagesList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = {};
-
-            public int getSize() {
-                return strings.length;
-            }
-
-            public String getElementAt(int i) {
-                return strings[i];
-            }
+            String[] strings = { };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
         });
         jScrollPane3.setViewportView(ClientOneMessagesList);
 

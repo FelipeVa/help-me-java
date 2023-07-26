@@ -42,6 +42,7 @@ public class Client2 extends javax.swing.JFrame {
         MessagesList = new javax.swing.JList<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Client 2");
         getContentPane().setLayout(null);
 
         Message.setColumns(20);

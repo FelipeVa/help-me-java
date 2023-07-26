@@ -42,6 +42,7 @@ public class Client1 extends javax.swing.JFrame {
         MessagesList = new javax.swing.JList<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Client 1");
         getContentPane().setLayout(null);
 
         Message.setColumns(20);
@@ -56,15 +57,9 @@ public class Client1 extends javax.swing.JFrame {
         SendButton.setBounds(310, 220, 80, 60);
 
         MessagesList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = {};
-
-            public int getSize() {
-                return strings.length;
-            }
-
-            public String getElementAt(int i) {
-                return strings[i];
-            }
+            String[] strings = { };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
         });
         jScrollPane2.setViewportView(MessagesList);
 
